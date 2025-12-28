@@ -1,0 +1,113 @@
+/* Logo Image */
+.logo img {
+  height: 55px;
+  width: auto;
+}
+
+/* Rest CSS same rahegi */
+.navbar {
+  width: 100%;
+  background: #fdfdfd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo a {
+  display: flex;
+  align-items: center;   /* vertically center */
+  gap: 10px;             /* image aur text ke beech space */
+  text-decoration: none;
+
+}
+
+.logo img {
+  width: 80px;           /* apne hisaab se */
+  height: auto;
+}
+
+.logo h4 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 32px;
+  }
+
+  .logo h4 {
+    font-size: 18px;
+  }
+}
+
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn {
+  background: #0f172a;
+  color: #f9f9f9 !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000000;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 43px;
+    right: 0px;
+    width: 40%;
+    background: #0f172a;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+}
