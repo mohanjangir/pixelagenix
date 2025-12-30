@@ -13,7 +13,7 @@ const Contact = () => {
   "service_0wi3w5j",   // ✅ Service ID
   "template_9yzblcl",  // ✅ Template ID
   formRef.current,
-  "C1xpfc7qMJnRdWrOy"     // ✅ Public Key
+  "rbJVT1lydQ1fYdRol"     // ✅ Public Key
 )
 
     // emailjs
