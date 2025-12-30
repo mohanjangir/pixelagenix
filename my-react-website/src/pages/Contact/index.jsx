@@ -9,13 +9,20 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "pixelagenix@gmail.com",      // 🔴 yaha apna EmailJS service id
-        "template_9yzblcI",     // 🔴 yaha apna template id
-        formRef.current,
-        "kdKDHP_IW0qm-h4fiuYYT"       // 🔴 yaha apna public key
-      )
+    emailjs.sendForm(
+  "service_0wi3w5j",   // ✅ Service ID
+  "template_9yzblcl",  // ✅ Template ID
+  formRef.current,
+  "C1xpfc7qMJnRdWrOy"     // ✅ Public Key
+)
+
+    // emailjs
+    //   .sendForm(
+    //     "pixelagenix@gmail.com",      // 🔴 yaha apna EmailJS service id
+    //     "template_9yzblcI",     // 🔴 yaha apna template id
+    //     formRef.current,
+    //     "kdKDHP_IW0qm-h4fiuYYT"       // 🔴 yaha apna public key
+    //   )
       .then(() => {
         alert("Message sent successfully!");
         formRef.current.reset();
